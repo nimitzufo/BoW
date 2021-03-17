@@ -11,8 +11,7 @@ int userMenu(FILE * pointerToFileA, FILE * pointerToFileB, FILE * pointerToToken
 		printf("\nD - Ler Arquivo de Dicionario");
 		printf("\nA - Ler texto de referencia A");
 		printf("\nB - Ler texto de referencia B");
-		printf("\nC - Comparar textos ");
-		printf("\nt - Exibir resultados");
+		printf("\nC - Comparar textos e exibir resultados");
 		printf("\nS - Sair\n");
 		char userInput = '0';
 		scanf("\n%c", &userInput);
