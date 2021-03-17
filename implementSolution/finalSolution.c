@@ -52,7 +52,7 @@ int userMenu(FILE * pointerToFileA, FILE * pointerToFileB, FILE * pointerToToken
 		if(userInput=='S'||userInput=='s'){
 			break;
 		}
-	}*/
+	}
 	return opened;	
 }
 
