@@ -1,0 +1,10 @@
+ler dicionario(uma palavra por linha) D
+texto de referencia A
+texto de referencia B
+ler textos A e B
+contar as frequencias das palavras do dicionario D
+armazenar em ponteiros as frequencias das palvras de D em A e B
+exibir BOWs de TRA e TRB na tela
+mostrar similaridade entre os dois textos 
+calcule a distancia euclidiana entre os vetores ContA ContB
+sair 
