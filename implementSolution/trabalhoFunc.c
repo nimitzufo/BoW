@@ -123,15 +123,6 @@ FILE *generateOutPutFile(FILE *refTxtA, FILE *refTxtB, FILE *DictFile){
 	return outputFILE;
 }
 
-FILE *Arquivo_Novo(char *PfileNAME){
-    return fopen(PfileNAME,"w");
-}
-
-
-
-
-
-
 
 void inputD(FILE *pointerToTokenFile){
 	char fileName[30];
