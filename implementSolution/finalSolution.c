@@ -27,7 +27,6 @@ int userMenu(FILE * pointerToFileA, FILE * pointerToFileB, FILE * pointerToToken
 			inputRead();
 		}
 
-
 		
 		//here we go
 		if(userInput=='C'){

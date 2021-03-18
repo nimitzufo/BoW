@@ -79,10 +79,10 @@ FILE *generateOutPutFile(FILE *refTxtA, FILE *refTxtB, FILE *DictFile){
 	
 	outputFILE = writeNewFILE(fileNAME);
 	
-	fseek(pTextFile, 0, SEEK_SET);
+	fseek(DictFile, 0, SEEK_SET);
      
     while(1){
-        memset (ppalavra,'\n',MAXWORDSIZE);
+        memset (pWord,'\n',MAXWORDSIZE);
         if(!nextWordInFile(DictFile, pWord)){
             printf("\nnão leu %s", pWord);
             break;
@@ -92,18 +92,18 @@ FILE *generateOutPutFile(FILE *refTxtA, FILE *refTxtB, FILE *DictFile){
         
         termFound = 0;
         while(1){
-            memset (ptermo,'\n',ptamtermos);
-            if(!nextWordInFile(, ptermo)){
+            memset (pTerm,'\n',sizeOfTerms);
+            if(!nextWordInFile(, pTerm)){
                 printf("\nnão leu %s", pWord);
                 break;
             }
-            printf("\nProcurando %s", ptermo);
+            printf("\nProcurando %s", pTerm);
             if(equalWords(pWord, pTerm)){
                 termFound = 1;
                 break;
             }
         }
-        if(pacheitermo){
+        if(termFound){
             fputs(dictData, outputFILE);
             fputs(" ", outputFILE);
         }
