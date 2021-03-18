@@ -36,16 +36,22 @@ int userMenu(FILE * pointerToFileA, FILE * pointerToFileB, FILE * pointerToToken
 			if(!beenHereTwo)
 				opened+=2;
 			beenHereTwo++;	
+			
 			//same shit different day
 			inputA(pointerToFileA);
 			if(!beenHereOne)
 				opened++;
 			beenHereOne++;
+			
 			//just another day at the office
 			inputB(pointerToFileB);
 			if(!beenHereThree)
 				opened+=4;
-			beenHereThree++;		
+			beenHereThree++;
+			
+			//fire in the hole		
+			FILE *file4show = generateOutPutFile(pointerToFileA, pointerToFileB, pointerToTokenFile);
+			
 			
 		}
 		

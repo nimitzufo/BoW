@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#define MAXWORDSIZE 35
 
 FILE *openFile(char *pointerFileName);
 FILE *newFile(char *pointerFileName);
