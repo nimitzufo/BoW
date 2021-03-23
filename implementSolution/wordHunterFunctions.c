@@ -216,13 +216,14 @@ void mBows(int tamDic, int *ContA, int *ContB, char dic[][MAX]){
 
 }
 
-void dEuclides(int tamDic, char *ContA, char *ContB){
+void dEuclides(int tamDic, int *ContA, int *ContB){
     system("clear");
     printf("===================================\n");
     printf("=========Distância Euclidiana======\n");
     printf("===================================\n");
 
     double s = 0;
+    int i = 0;
     
     for(int i=0; i<tamDic; i++){
         s += pow(ContA[i] - ContB[i], 2);

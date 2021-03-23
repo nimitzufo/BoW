@@ -25,7 +25,8 @@ void readDic(FILE *arqDic, int *tamDic, char dic[][MAX]);
 void bows(FILE * arqTR, int tamDic, char dic[][MAX], FILE *arqbowTR, int *Cont, char ver[2]);
 void mostraBows(int *ContA, int *ContB, char dic[][MAX], int tamDic);
 void mBows(int tamDic, int *ContA, int *ContB, char dic[][MAX]);
-void dEuclides(int tamDic, char *ContA, char *ContB);
+void dEuclides(int tamDic, int *ContA, int *ContB);
+double pow(double x, double y);
 
 
 #endif
